@@ -1,0 +1,111 @@
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.event.*;
+
+public class GUI extends JFrame implements GUISchreiber{
+
+    // Anfang Attribute
+    private JTextArea jTextArea1 = new JTextArea("");
+    private JScrollPane jTextArea1ScrollPane = new JScrollPane(jTextArea1);
+    private JTextField nameEingabe = new JTextField();
+    private JTextField scoreEingabe = new JTextField();
+    private JLabel jLabel1 = new JLabel();
+    private JButton okButton = new JButton();
+    private JLabel jLabel2 = new JLabel();
+    
+    private ModelSchreiber modelS;
+    // Ende Attribute
+
+    public GUI(ModelSchreiber modelS) { 
+        // Frame-Initialisierung
+        super();
+        this.modelS=modelS;
+        
+        setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+        int frameWidth = 449; 
+        int frameHeight = 385;
+        setSize(frameWidth, frameHeight);
+        Dimension d = Toolkit.getDefaultToolkit().getScreenSize();
+        int x = (d.width - getSize().width) / 2;
+        int y = (d.height - getSize().height) / 2;
+        setLocation(x, y);
+        setTitle("Highscore Verwaltung");
+        setResizable(false);
+        Container cp = getContentPane();
+        cp.setLayout(null);
+        // Anfang Komponenten
+
+        jTextArea1ScrollPane.setBounds(176, 192, 241, 129);
+        cp.add(jTextArea1ScrollPane);
+        
+        
+        nameEingabe.setBounds(32, 104, 137, 33);
+        nameEingabe.setText("neuer Name");
+        cp.add(nameEingabe);
+
+        scoreEingabe.setBounds(216, 104, 121, 33);
+        scoreEingabe.setText("0");
+        scoreEingabe.add(jLabel1);
+        cp.add(scoreEingabe);
+
+        jLabel1.setBounds(8, 184, 124, 65);
+        jLabel1.setText("Aktuelle Highscore");
+        cp.add(jLabel1);
+
+        okButton.setBounds(368, 104, 49, 41);
+        okButton.setText("OK");
+        okButton.setMargin(new Insets(2, 2, 2, 2));
+        okButton.addActionListener(new ActionListener() { 
+                public void actionPerformed(ActionEvent evt) { 
+                    jButton1_ActionPerformed(evt);
+                }
+            });
+        cp.add(okButton);
+        jLabel2.setBounds(16, 32, 355, 49);
+        jLabel2.setText("Spielername und Score neu eingeben:");
+        cp.add(jLabel2);
+        // Ende Komponenten
+
+        setVisible(true);
+    } // end of public GUI
+
+    // Anfang Methoden
+
+    public void jButton1_ActionPerformed(ActionEvent evt) {
+
+        this.scoreEingabe.getText();
+        
+        modelS.neuerEintrag(this.nameEingabe.getText(),Integer.parseInt(this.scoreEingabe.getText()));
+    } // end of jButton1_ActionPerformed
+
+    public void schreiben(String inhalt){
+        jTextArea1.setText(inhalt);
+    }
+    // Ende Methoden
+} // end of class GUI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
