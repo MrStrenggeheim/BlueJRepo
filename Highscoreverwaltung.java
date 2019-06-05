@@ -1,5 +1,5 @@
 
-public class Highscoreverwaltung
+public class Highscoreverwaltung // das ist ein Kommentar !!!!!!!!!!!!!!!!!!!
 {
     private Datenbank b;
     private GUI gui;
