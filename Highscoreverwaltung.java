@@ -7,6 +7,7 @@ public class Highscoreverwaltung
     private Controller c;
     
 
+    //sadhufapsodfhasdofh Test
     public Highscoreverwaltung(){
         b=new Datenbank();
         gui=new GUI();
