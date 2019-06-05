@@ -7,7 +7,6 @@ import java.awt.event.ActionListener;
 
 public class GUI extends JFrame implements GUISchreiber {
 
-    //test
     // Anfang Attribute
     private JTextArea jTextArea1 = new JTextArea("");
     private JScrollPane jTextArea1ScrollPane = new JScrollPane(jTextArea1);
