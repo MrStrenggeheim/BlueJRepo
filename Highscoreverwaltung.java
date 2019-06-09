@@ -7,7 +7,8 @@ public class Highscoreverwaltung // das ist ein Kommentar !!!!!!!!!!!!!!!!!!!
     private Controller c;
     
 
-    //sadhufapsodfhasdofh Test
+    //dies ist ein test 
+    //spdfjklhasbdälfkhasädgfasjkgäöasjfgöasdfgd
     public Highscoreverwaltung(){
         b=new Datenbank();
         gui=new GUI();
