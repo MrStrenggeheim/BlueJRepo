@@ -4,8 +4,8 @@ public class Abschluss extends Listenelement
   
     public Abschluss(){}
 
-      public Listenelement hintenEinfuegen(Datenelement neu){
-          return new Knoten(neu,this);
+    public Listenelement hintenEinfuegen(Datenelement neu){
+        return new Knoten(neu,this);
     }
 
     public Listenelement einfuegenVor(Datenelement neu, Datenelement vor){
