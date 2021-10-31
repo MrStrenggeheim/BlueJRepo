@@ -4,6 +4,7 @@ public class Knoten extends Listenelement
     Datenelement daten;
     Listenelement nachfolger;
 
+    // standard Knoten-Verfahren der Sortierung in Listen
     public Knoten(Datenelement datenNeu, Listenelement nNeu){
         this.daten=datenNeu;
         this.nachfolger=nNeu;

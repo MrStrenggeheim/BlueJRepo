@@ -1,5 +1,7 @@
 public abstract class Listenelement{
 
+    // hier mal eine abstracte KLasse für Listenelement
+
     public Listenelement hintenEinfuegen(Datenelement neu){    return null;    }
 
     public Listenelement einfuegenVor(Datenelement neu, Datenelement vor){    return null;    }
