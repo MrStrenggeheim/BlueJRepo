@@ -12,7 +12,7 @@ public class Controller implements ControllerSchreiber
     }
     
     public void neuerSpieler(String name, int score) {
-        if (name == "test ") {
+        if (name.equals("test ")) {
             guiSchreiber.invalidName(name);
         } else {
             mSchreiber.schreiben(name, score);

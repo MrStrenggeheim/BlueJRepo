@@ -19,9 +19,8 @@ public class Knoten extends Listenelement
         if(daten!=vor){  
             nachfolger=nachfolger.einfuegenVor(neu, vor);
             return this;
-        } 
-        Knoten kNeu=new Knoten(neu,this);
-        return kNeu;
+        }
+        return new Knoten(neu, this);
     }
 
     public Listenelement sortiertEinfuegen(Datenelement neu){

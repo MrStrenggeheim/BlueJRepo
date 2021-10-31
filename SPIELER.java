@@ -22,10 +22,7 @@ public class SPIELER implements Datenelement{
     }
     
     public boolean schluesselIstGleich(String vergleich){
-        if(this.name.compareTo(vergleich)==0){
-            return true;
-        }
-        return false;
+        return this.name.compareTo(vergleich) == 0;
     }
     
     public int nenneHighscore(){
