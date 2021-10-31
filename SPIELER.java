@@ -1,4 +1,6 @@
 public class SPIELER implements Datenelement{
+
+    // als wichtigstes element beim Spielen ist der Spieler natürlich unfehlbar
     
     private String name;
     private int highscore;    

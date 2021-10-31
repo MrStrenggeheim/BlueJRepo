@@ -6,6 +6,7 @@ public class Controller implements ControllerSchreiber
         
     }
     
+    // hier wird angemeldet für dein schreiber martin
     public void anmelden(ModelSchreiber mSchreiber, GUISchreiber guiSchreiber) {
         this.mSchreiber = mSchreiber;
         this.guiSchreiber = guiSchreiber;
